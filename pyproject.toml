@@ -1,0 +1,15 @@
+[project]
+name = "invoice-extractor-nlp"
+version = "0.2.0"
+description = "Invoice extraction using spaCy NLP and NER with Streamlit"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.40.0",
+    "pandas>=2.2.0",
+    "pymupdf>=1.24.0",
+    "spacy>=3.8.0",
+]
+
+[tool.uv]
+package = false
