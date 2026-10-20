@@ -15,7 +15,6 @@ st.caption("Extract structured invoice fields using spaCy NLP, Named Entity Reco
 
 MODEL_NAME = "en_core_web_sm"
 
-
 @st.cache_resource
 def load_nlp():
     """Load spaCy's locally installed English NLP pipeline."""
@@ -217,7 +216,7 @@ Total Amount: ₹2,478
 with st.sidebar:
     st.header("Pipeline")
     st.markdown("1. Text normalization\n2. spaCy NLP pipeline\n3. Named Entity Recognition\n4. Invoice-specific rules\n5. Structured JSON/CSV")
-    st.info("NER uses spaCy's local pretrained English model. No external AI API is called.")
+    st.info("NER uses spaCy's local pretrained English model.")
     st.caption("General-purpose NER may miss invoice-specific entities; rule-based extraction handles labeled invoice fields.")
 
 
